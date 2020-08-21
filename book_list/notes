@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "pls work"
+git commit -m "I think I'm understanding? Plz dont jinx this."
 
 git push origin master
 
