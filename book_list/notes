@@ -1,0 +1,20 @@
+git status 
+
+git add . 
+
+got commit -m "testing out save"
+
+git push origin master
+
+
+Book app with API from Good Reads 
+
+- I'm going to welcome the user
+- Then I'm going to ask they choose a genre 
+- Then I return onto the terminal a list of all books in that genre 
+- Then ask for input of what book they want
+- Then show information about that book 
+
+CLI class - Dealing with things showing on the terminal
+API class - Deal with API things
+Books class - Deal with all books 
