@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-got commit -m "testing out save"
+git commit -m "write w/e I want"
 
 git push origin master
 
