@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "Working on finding an API URL that works #2."
+git commit -m "Bundle Install Httparty."
 
 git push origin master
 
