@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "write w/e I want"
+git commit -m "pls work"
 
 git push origin master
 
@@ -18,3 +18,4 @@ Book app with API from Good Reads
 CLI class - Dealing with things showing on the terminal
 API class - Deal with API things
 Books class - Deal with all books 
+

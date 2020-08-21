@@ -1,7 +1,7 @@
 class CLI 
   
   def start 
-    puts "hello world"
+    puts "Welcome to CLI class"
   end 
 
 end 
