@@ -1,10 +1,17 @@
 class CLI 
   
+  attr_accessor :api, :book, :author 
+  
+  def call 
+    start
+  end 
+  
   def start 
-    puts "Welcome to my book app"
-    puts "Please choose a book"
+    puts "Welcome!"
+    sleep(1)
+    puts "Please choose a book!"
     input = gets.strip
-    API.get_books(input)
+    @api = API.new 
   end 
 
 end 
