@@ -26,8 +26,10 @@ class CLI
     puts "Please pick a number."
   end 
   
+  
+  
   #gets. string is a string turn the string into an integer.
-  #look thru al books and get index number subtract by 1 
+  #look thru all books and get index number subtract by 1 
   #books.all[2.i-1] b.author b.description to show off info 
   
   
