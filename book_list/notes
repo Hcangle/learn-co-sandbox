@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "Need to code so that when a number is chosen returns description."
+git commit -m "Almost there!"
 
 git push origin master
 
