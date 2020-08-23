@@ -9,7 +9,7 @@ class CLI
   def start 
     puts "Welcome!"
     sleep(1)
-    puts "Please choose a book!"
+    puts "Please choose a subject!"
     input = gets.strip
     @api = API.new 
   end 
