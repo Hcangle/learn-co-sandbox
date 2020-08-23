@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "Juan helped me."
+git commit -m "home stretch."
 
 git push origin master
 
