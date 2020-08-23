@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "Got an API finally. Now just gotta make it work."
+git commit -m "API still isnt working."
 
 git push origin master
 
