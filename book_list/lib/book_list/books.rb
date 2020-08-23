@@ -1,7 +1,12 @@
 class Books 
+  attr_accessor :title, :author, :description
+  
   @@all = []
  
-  def initialize 
+  def initialize(title, author, description) 
+    @title = title 
+    @author - author 
+    @description = description
     @@all << self 
   end 
   

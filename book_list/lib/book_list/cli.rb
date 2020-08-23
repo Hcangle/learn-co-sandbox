@@ -10,8 +10,11 @@ class CLI
     puts "Welcome!"
     sleep(1)
     puts "Please choose a subject!"
-    input = gets.strip
-    @api = API.new 
+    input = gets.strip.downcase
+    @api = API.get_books(input)
   end 
+  
+  
+ 
 
 end 
