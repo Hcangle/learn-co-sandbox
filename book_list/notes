@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "still returning everything BUT I got the list to start at 1 instead of 0"
+git commit -m "keep going"
 
 git push origin master
 

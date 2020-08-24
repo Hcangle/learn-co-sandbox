@@ -37,6 +37,7 @@ class CLI
   end 
  end  
  
+  #google to_i 
   #gets.strip is a string turn the string into an integer.
   #look thru all books and get index number subtract by 1 
   #Books.all(2.i-1) b.author b.description to show off info 
