@@ -24,15 +24,17 @@ class CLI
     
   def get_info 
     puts "Please pick a number."
-    input = gets.chomp.to_i
+    input = gets.chomp
     @api= API.get_books(input)
     number_picked
  end 
   
   def number_picked
-    Books.all.select.with_index |b, i| 
-    puts "#{i}. #{b.author} #{b.description}"
-  end
+   Books.all.select.with_index do |b, i| 
+   next if i == 0  
+   puts "#{i}. #{b.author} #{b.description}"
+ end
+  end 
  end  
  
   #gets.strip is a string turn the string into an integer.

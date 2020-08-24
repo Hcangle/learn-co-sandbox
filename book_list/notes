@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "I need to figure out how to retun only the selected number still"
+git commit -m "still returning everything BUT I got the list to start at 1 instead of 0"
 
 git push origin master
 
