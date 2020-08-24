@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "experiementing"
+git commit -m "add exit"
 
 git push origin master
 
