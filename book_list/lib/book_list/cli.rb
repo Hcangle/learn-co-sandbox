@@ -19,23 +19,29 @@ class CLI
     Books.all.each.with_index(1) do | b, i | 
     puts "#{i}. #{b.title}"
     end
-    get_info 
+    pick_a_number 
   end 
     
-  def get_info 
+  def pick_a_number 
     puts "Please pick a number."
-    input = gets.chomp
+    input = gets.strip.to_i
+    #show_all_info(input) if number_picked(input, Books)
     @api= API.get_books(input)
     number_picked
  end 
+ end
   
   def number_picked
-   Books.all.select.with_index do |b, i| 
-   next if i == 0  
-   puts "#{i}. #{b.author} #{b.description}"
+    Books.all.select.with_index do |b, i| 
+    #input.to_i <= data.length && input.to_i > 0 
+    puts "#{i}. #{b.author} #{b.description}"
  end
-  end 
- end  
+
+  def show_all_info
+    #books = Books[input - 1]
+    #puts "#{i}. #{b.author} #{b.description}"
+  end  
+end
  
   #google to_i 
   #gets.strip is a string turn the string into an integer.
