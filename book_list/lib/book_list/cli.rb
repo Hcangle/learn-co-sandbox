@@ -5,6 +5,7 @@ class CLI
   def call 
     start
   end 
+
   
   def start 
     puts "Welcome!"
@@ -23,17 +24,20 @@ class CLI
   end 
     
   def pick_a_number 
-    puts "Please pick a number."
+    puts "Please pick a number between 1 and 10."
     input = gets.strip.to_i
-
-    show_all_info(input) 
+    show_all_info(input) if number_picked(input.to_i, Books.all)
  end
   
-  def number_picked
-    if input.to_i <= data.length && input.to_i > 0 
-      
-    #input.to_i <= data.length && input.to_i > 0 
-    
+  def number_picked(input, data)
+    if input <= data.length && input > 0 
+      true
+    else 
+     puts "Invalid number."
+     sleep(1)
+     display_books
+  
+    end 
   end
 
   def show_all_info(input)
@@ -42,7 +46,6 @@ class CLI
     puts "Author: #{b.author.join(" ")}"
     puts "Description: #{b.description}"
     #show_all_info(input) if number_picked(input, Books)
-    @api= API.get_books(input)
  
  end
 end
