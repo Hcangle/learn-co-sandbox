@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "Almost there! Maybe..."
+git commit -m "I need to figure out how to retun only the selected number"
 
 git push origin master
 
