@@ -36,7 +36,7 @@ class CLI
      puts "Invalid number."
      sleep(1)
      display_books
-  
+     
     end 
   end
 
@@ -46,8 +46,37 @@ class CLI
     puts "Author: #{b.author.join(" ")}"
     puts "Description: #{b.description}"
     #show_all_info(input) if number_picked(input, Books)
- 
- end
+    menu_return
+  end
+  
+    
+    def menu_return
+     puts "What would you like to do next?"
+     puts "1. Go back to the Book Selection."
+     puts "2. Go back to the Subject Selection."
+     puts "3. Leave"
+     puts ""
+     puts "Please select by number"
+    return_input = gets.strip.to_i 
+     if return_input == 1 
+      display_books
+    elsif return_input == 2 
+      Books.clear_all
+      start
+     elsif return_input == 3 
+      exit_method
+    else 
+      puts "Please give a valid selecton."
+      menu_return
+    end 
+  end 
+    
+    def exit_method
+      puts "Thank for for your visiting!"
+      exit
+    end 
+    
+  
 end
  
   #google to_i 

@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "We DID IT"
+git commit -m "We need an exit"
 
 git push origin master
 
