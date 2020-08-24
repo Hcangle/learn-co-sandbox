@@ -4,6 +4,9 @@ git add .
 
 git commit -m "add exit"
 
+git commit -m "experiementing pt 2"
+
+
 git push origin master
 
 

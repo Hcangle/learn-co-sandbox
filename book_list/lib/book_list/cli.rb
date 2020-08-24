@@ -25,21 +25,26 @@ class CLI
   def pick_a_number 
     puts "Please pick a number."
     input = gets.strip.to_i
+
     show_all_info(input) 
  end
   
-#   def number_picked
-#     Books.all.select.with_index do |b, i| 
-#     #input.to_i <= data.length && input.to_i > 0 
-#     puts "#{i}. #{b.author} #{b.description}"
-# end
+  def number_picked
+    if input.to_i <= data.length && input.to_i > 0 
+      
+    #input.to_i <= data.length && input.to_i > 0 
+    
+  end
 
   def show_all_info(input)
     b = Books.all[input - 1]
     puts "Title: #{b.title}"
     puts "Author: #{b.author.join(" ")}"
     puts "Description: #{b.description}"
-  end  
+    #show_all_info(input) if number_picked(input, Books)
+    @api= API.get_books(input)
+ 
+ end
 end
  
   #google to_i 
