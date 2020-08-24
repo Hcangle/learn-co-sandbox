@@ -1,6 +1,6 @@
 # BookList
 
-Pick from a list of genres, which will then give you a list of books to choose from to get more information on the chosen book. 
+Pick from a list of subjects, which will then give you a list of book titles to choose from to get more information on the chosen book. 
 
 ## Installation
 

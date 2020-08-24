@@ -30,11 +30,9 @@ class CLI
  end 
   
   def number_picked
-    Books.all.select.with_index do | b, i | 
+    Books.all.select.with_index |b, i| 
     puts "#{i}. #{b.author} #{b.description}"
-   end 
   end
- 
  end  
  
   #gets.strip is a string turn the string into an integer.
