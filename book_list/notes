@@ -2,7 +2,7 @@ git status
 
 git add . 
 
-git commit -m "We need an exit"
+git commit -m "ITS DONE. except for being prettified"
 
 git push origin master
 

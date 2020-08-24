@@ -52,7 +52,7 @@ class CLI
     
     def menu_return
      puts "What would you like to do next?"
-     puts "1. Go back to the Book Selection."
+     3puts "1. Go back to the Book Selection."
      puts "2. Go back to the Subject Selection."
      puts "3. Leave"
      puts ""
