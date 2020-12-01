@@ -11,13 +11,13 @@ class CLI
     puts "Welcome!"
     sleep(1)
     puts "Please choose a subject!"
-    input = gets.strip.downcase
-    @api = API.get_books(input)
+    @subject = gets.strip.downcase
+    API.get_books(@subject)
     display_books 
   end 
   
   def display_books
-    Books.all.each.with_index(1) do | b, i | 
+    Book.search_results[@subject].each.with_index(1) do | b, i | 
     puts "#{i}. #{b.title}"
     end
     pick_a_number 
@@ -26,12 +26,12 @@ class CLI
   def pick_a_number 
     puts "Please pick a number between 1 and 10."
     input = gets.strip.to_i
-    show_all_info(input) if number_picked(input.to_i, Books.all)
+    number_picked(input.to_i)
  end
   
-  def number_picked(input, data)
-    if input <= data.length && input > 0 
-      true
+  def number_picked(input)
+    if input <= Book.search_results[@subject].length && input > 0 
+       show_all_info(input)
     else 
      puts "Invalid number."
      sleep(1)
@@ -41,8 +41,9 @@ class CLI
   end
 
   def show_all_info(input)
-    b = Books.all[input - 1]
+    b = Book.search_results[@subject][input - 1]
     puts "Title: #{b.title}"
+    binding.pry
     puts "Author: #{b.author.join(" ")}"
     puts "Description: #{b.description}"
     #show_all_info(input) if number_picked(input, Books)
@@ -52,16 +53,16 @@ class CLI
     
     def menu_return
      puts "What would you like to do next?"
-     3puts "1. Go back to the Book Selection."
+     puts "1. Go back to the Book Selection."
      puts "2. Go back to the Subject Selection."
-     puts "3. Leave"
+     puts "3. Exit."
      puts ""
      puts "Please select by number"
     return_input = gets.strip.to_i 
      if return_input == 1 
       display_books
     elsif return_input == 2 
-      Books.clear_all
+
       start
      elsif return_input == 3 
       exit_method

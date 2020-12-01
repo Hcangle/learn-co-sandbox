@@ -1,6 +1,6 @@
-require "./lib/book_list/cli"
-require "./lib/book_list/api"
-require "./lib/book_list/books"
+require_relative "book_list/cli"
+require_relative "book_list/api"
+require_relative "book_list/book"
 
 require "pry"
 require "httparty"

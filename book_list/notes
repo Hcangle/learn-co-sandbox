@@ -10,8 +10,8 @@ git push origin master
 Book app with API from Good Reads 
 
 - I'm going to welcome the user
-- Then I'm going to ask they choose a genre 
-- Then I return onto the terminal a list of all books in that genre 
+- Then I'm going to ask they choose a subject 
+- Then I return onto the terminal a list of all books in that subject 
 - Then ask for input of what book they want
 - Then show information about that book 
 

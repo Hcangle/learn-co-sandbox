@@ -2,6 +2,6 @@
 
 #executable file where I run my whole project 
 
-require './lib/environment'
+require_relative '../lib/environment'
 
 CLI.new.start
